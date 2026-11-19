@@ -1,0 +1,19 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+*.key
+.pytest_cache/
+logs/*.pcap
+
+# Additional environment and secret files
+.env.*
+*.pem
+*.p12
+*.pfx
+
+# Python and editor artifacts
+.coverage
+htmlcov/
+.DS_Store
+.vscode/
