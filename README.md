@@ -71,6 +71,8 @@ The authenticated data includes BlockNum, FlowID and packet payload data.
 
 The prototype uses a simplified HMAC construction rather than implementing the complete Merkle-tree HMAC mechanism described in the research paper.
 
+**Security note:** The HMAC secret key is hardcoded in the source code for demonstration purposes only. In a real-world implementation, the key should be securely generated, stored and managed. The hardcoded key used in this prototype must not be used in production.
+
 ## 4. IPD Watermark Encoding
 
 The sender supports two transmission modes.
@@ -120,7 +122,6 @@ Attack classification is simplified and based on observable packet and integrity
 - HMAC and SHA-256
 - Python `argparse`
 - CSV experiment logging
-- NumPy
 - Matplotlib
 - Ubuntu on Windows Subsystem for Linux (WSL)
 
@@ -168,7 +169,7 @@ The `experiments/` directory contains preliminary implementations developed to u
 Clone the repository:
 
 ```bash
-git clone https://github.com/HK372k/chainpatrol-virtual-trailer-prototype.git
+git clone https://github.com/Hari372k/chainpatrol-virtual-trailer-prototype.git
 cd chainpatrol-virtual-trailer-prototype
 ```
 
